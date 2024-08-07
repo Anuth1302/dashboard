@@ -1,0 +1,133 @@
+* {
+  color: whitesmoke;
+}
+main {
+  position: fixed;
+  top: 7vh;
+  left: 5vw;
+  width: 95%;
+  height: 93%;
+  margin: 0;
+  overflow-y: auto;
+  background-color: rgb(33, 33, 33);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+main h2 {
+  margin: 7px 10px;
+  color: whitesmoke;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.summary {
+  grid-column: span 4;
+  grid-row: span 1;
+  display: grid;
+  gap: 20px;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  box-sizing: border-box;
+}
+
+.activity {
+  background-color: rgb(50, 51, 58);
+  box-sizing: border-box;
+  padding: 0 20px;
+  border-radius: 10px;
+  grid-column: span 4;
+  grid-row: span 1;
+  max-height: 220px;
+  overflow-y: auto;
+}
+.customer-feedback {
+  background-color: rgb(50, 51, 58);
+  grid-column: span 2;
+  padding: 0 20px;
+  grid-row: span 1;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: 310px;
+}
+.goals {
+  grid-column: span 2;
+  grid-row: span 1;
+  padding: 0 20px;
+  background-color: rgb(50, 51, 58);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.popular-dishes {
+  background-color: rgb(50, 51, 58);
+  border-radius: 10px;
+  grid-column: span 2;
+  padding: 0 20px;
+  grid-row: span 1;
+  box-sizing: border-box;
+}
+.recent-orders {
+  background-color: rgb(50, 51, 58);
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  grid-column: span 4;
+  grid-row: span 1;
+}
+::-webkit-scrollbar {
+  padding: 10px;
+  height: 8px;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: whitesmoke;
+  box-shadow: 0 0 5px black inset;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .summary {
+    gap: 2px;
+  }
+  .goals {
+    grid-column: span 4;
+    grid-row: span 1;
+  }
+  .popular-dishes {
+    grid-column: span 4;
+  }
+  .customer-feedback {
+    grid-column: span 4;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    left: 0vw;
+    /* width: calc(100%-5); */
+    width: 100%;
+  }
+  .grid-container {
+    gap: 5px;
+  }
+  .summary {
+    gap: 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-container {
+    gap: 10px;
+  }
+  .summary {
+    gap: 10px;
+  }
+}

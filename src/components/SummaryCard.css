@@ -1,0 +1,74 @@
+.summary-card {
+  grid-column: span 1;
+  grid-row: span 1;
+  gap: 10px;
+  background-color: rgb(50, 51, 58);
+  width: auto;
+  height: auto;
+  /* padding: 10px; */
+  padding-top: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.summary-title {
+  margin: 0;
+  padding: 0 10px;
+  font-size: normal;
+}
+.summary-value {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+}
+.icon {
+  background-color: pink;
+  font-size: 3rem;
+  border-radius: 5px;
+  fill: rgb(88, 88, 229);
+  padding: 5px;
+  margin: 0 10px;
+}
+.order {
+  fill: rgb(76, 154, 243);
+  background-color: rgb(14, 14, 227);
+}
+.delivered {
+  fill: rgb(7, 227, 7);
+  background-color: rgb(2, 120, 22);
+}
+.cancelled {
+  fill: rgb(249, 120, 120);
+  background-color: red;
+}
+.revenue {
+  fill: pink;
+  background-color: darkorchid;
+}
+.sum {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 0;
+}
+.red {
+  color: rgb(247, 28, 28);
+  font-weight: bold;
+}
+.green {
+  color: rgb(13, 212, 13);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+  .icon {
+    font-size: 2rem;
+  }
+  .summary-title {
+    font-size: 0.8rem;
+  }
+  .summary-value {
+    font-size: 1.5rem;
+  }
+}

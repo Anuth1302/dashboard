@@ -1,0 +1,45 @@
+
+
+.customer-feedback {
+    background-color: rgb(50, 51, 58);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    overflow: auto; /* Ensure content does not overflow */
+  }
+  
+  .customer-feedback h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.2em; /* Slightly larger font for the heading */
+    border-bottom: 2px solid rgb(70, 70, 70); /* Add a border under the heading */
+    padding-bottom: 10px; /* Space between text and border */
+  }
+  
+  .feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between feedback items */
+  }
+  
+  .feedback-item {
+    background-color: rgb(40, 40, 40); /* Slightly lighter background for feedback items */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add subtle shadow for depth */
+  }
+  
+  .feedback-name {
+    font-weight: bold;
+    margin: 0 0 5px 0;
+  }
+  
+  .feedback-text {
+    margin: 0 0 5px 0;
+  }
+  
+  .feedback-rating {
+    font-style: italic;
+    margin: 0;
+  }
+  

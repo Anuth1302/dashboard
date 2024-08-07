@@ -1,0 +1,43 @@
+.goals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .left {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: bold;
+  }
+  .percentage {
+    padding: 10px;
+  }
+  .goal-amount {
+    font-size: 2rem;
+  
+    margin: 0;
+    padding: 20px 0;
+  }
+  .goal-profit {
+    margin: 0;
+  }
+  .goal-change {
+    color: rgb(10, 206, 10);
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* border: 2px solid white; */
+    background: conic-gradient(
+      from 0deg,
+      blue 0% 70%,
+      rgb(96, 103, 204) 70% 100%
+    );
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+  }

@@ -1,0 +1,52 @@
+.recent-orders table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.recent-orders th,
+.recent-orders td {
+  padding: 10px 0;
+  text-align: left;
+  color: #fff;
+  border-bottom: 1px solid rgb(125, 123, 123);
+  margin: 10px 0;
+  font-weight: bold;
+  /* background-color: pink; */
+}
+.recent-orders th:last-child {
+  text-align: center;
+}
+
+/* .recent-orders tr:nth-child(even) {
+  background-color: #3a3a4a;
+} */
+
+.recent-orders tr:hover {
+  background-color: #444;
+}
+
+#recent-delivered {
+  color: rgb(101, 246, 109);
+  background-color: rgb(1, 156, 1);
+  border-radius: 20px;
+  height: 10px !important;
+  /* width: min-content; */
+  text-align: center;
+  padding: 0;
+}
+
+#recent-cancelled {
+  background-color: rgb(244, 23, 23);
+  border-radius: 20px;
+  text-align: center;
+  color: rgb(222, 72, 72);
+  /* margin: 10px 0; */
+  /* width: 10px; */
+}
+
+#recent-pending {
+  background-color: rgb(255, 183, 0);
+  border-radius: 20px;
+  text-align: center;
+  color: rgb(236, 73, 28);
+}
